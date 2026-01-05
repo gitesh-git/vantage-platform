@@ -25,3 +25,6 @@ dist-ssr
 
 # Maven
 target/
+
+# Local Node binaries
+node/
