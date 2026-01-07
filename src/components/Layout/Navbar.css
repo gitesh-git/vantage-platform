@@ -4,13 +4,14 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 1.25rem 2rem;
+    padding: 0.75rem 2rem;
     transition: all 0.3s ease;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
 }
 
 .navbar.scrolled {
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     background: rgba(10, 10, 10, 0.95);
     /* Slightly darker for better contrast when scrolled */
     backdrop-filter: blur(16px);
@@ -29,23 +30,22 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.5rem;
-    color: var(--text-primary);
+    color: #ffffff;
     letter-spacing: 0.05em;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Outfit', sans-serif;
     text-transform: uppercase;
 }
 
 .logo-text {
-    background: linear-gradient(90deg, #fff 0%, #a5a5a5 50%, #fff 100%);
+    background: linear-gradient(90deg, #fff 0%, #fff 40%, #7928ca 50%, #fff 60%, #fff 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: shimmer 3s linear infinite;
+    animation: shimmer 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 @keyframes shimmer {
@@ -55,10 +55,13 @@
 }
 
 .logo-icon {
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 4px 12px rgba(121, 40, 202, 0.5));
+    background: linear-gradient(135deg, #7928ca 0%, #ff0080 50%, #7928ca 100%);
     background-size: 200% 200%;
-    padding: 0.5rem;
+    padding: 0.45rem;
+    color: white;
     border-radius: 12px;
     animation: logoPulse 3s ease-in-out infinite, logoFloat 4s ease-in-out infinite, gradientShift 6s ease infinite;
     transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
