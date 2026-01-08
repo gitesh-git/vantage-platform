@@ -35,6 +35,7 @@
     transform: scale(1.1);
     animation: kenBurns 18s ease-in-out infinite alternate;
     will-change: transform;
+    transform-origin: center center;
 }
 
 @keyframes kenBurns {
