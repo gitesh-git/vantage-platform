@@ -31,7 +31,7 @@ const Signup = () => {
             <div className="auth-container">
                 <div className="auth-header">
                     <Camera size={48} className="auth-logo-icon" />
-                    <h1>Join Photography Gallery</h1>
+                    <h1>Join Luma</h1>
                     <p>Share your perspective with the world</p>
                 </div>
 

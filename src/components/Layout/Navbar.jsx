@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import { Aperture, Upload, User, Menu, X, LogOut } from 'lucide-react';
+import { Camera, Upload, User, Menu, X, LogOut } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -27,8 +27,8 @@ const Navbar = () => {
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                    <Aperture className="logo-icon" />
-                    <span className="logo-text">APERTURE GALLERY</span>
+                    <Camera className="logo-icon" />
+                    <span className="logo-text">Vantage</span>
                 </Link>
 
                 {/* Desktop Nav */}
