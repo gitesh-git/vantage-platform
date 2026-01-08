@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import { Focus, Upload, User, Menu, X, LogOut } from 'lucide-react';
+import { Aperture, Upload, User, Menu, X, LogOut } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                    <Focus className="logo-icon" />
+                    <Aperture className="logo-icon" size={32} />
                     <span className="logo-text">APERTURE GALLERY</span>
                 </Link>
 
